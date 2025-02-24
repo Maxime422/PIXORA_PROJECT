@@ -21,15 +21,19 @@
 			rel="stylesheet"
 		/>
 
-		<script src="script.js" defer></script>
+		<script src="JS/script.js" defer></script>
 	</head>
 
-	<body></body>
-	<script>
-		window.addEventListener('load', () => {
-			if ('serviceWorker' in navigator) {
-				navigator.serviceWorker.register('service-worker.js');
-			}
-		});
-	</script>
+	<body>
+		<header>
+
+		</header>
+		<script>
+			window.addEventListener('load', () => {
+				if ('serviceWorker' in navigator) {
+					navigator.serviceWorker.register('service-worker.js');
+				}
+			});
+		</script>
+	</body>
 </html>
