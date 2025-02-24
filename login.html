@@ -8,7 +8,7 @@
 		<meta name="description" content="..." />
 		<meta name="author" content="Maxime Germis" />
 
-        <link rel="icon" type="image/png" sizes="76x76" href="..." />
+		<link rel="icon" type="image/png" sizes="76x76" href="..." />
 
 		<link rel="stylesheet" href="CSS/variables.css" />
 		<link rel="stylesheet" href="CSS/style.css" />
@@ -25,9 +25,46 @@
 	</head>
 
 	<body>
-		<header>
+		<!-- Main -->
+		<main class="zf">
+			<section id="sectionText">
+				<a href="index.html"><img src="IMG/PINTEREST_TEMP_LOGO.png" alt="Logo Pixora" /></a>
 
-		</header>
+				<div>
+					<h1>Bienvenue</h1>
+					<p>Inscrit toi pour profiter dès maintenant et rejoins l’Pixora !</p>
+				</div>
+			</section>
+
+			<!-- Section 100vh -->
+			<section id="sectionForm">
+				<form>
+					<h2>S'inscrire</h2>
+
+					<div>
+						<label for="name">Nom d’utilisateur</label>
+						<input type="text" name="name" id="name" required minlength="4" maxlength="20" placeholder="Entre un nom d’utilisateur" />
+
+						<label for="email">Adresse mail</label>
+						<input type="email" name="email" id="email" required minlength="4" maxlength="20" placeholder="Entre ton adresse mail" />
+
+						<label for="mdp">Mot de passe</label>
+						<input type="password" name="mdp" id="mdp" required minlength="8" maxlength="20" placeholder="Entre ton mot de passe" />
+
+						<label for="mdpConfirm">Entrer à nouveau ton mot de passe</label>
+						<input type="password" name="mdpConfirm" id="mdpConfirm" required minlength="8" maxlength="20" placeholder="Entre à nouveau ton mot de passe" />
+
+						<input type="checkbox" />
+						<a href="#">J’accepte les <span>conditions d’utilisations</span></a>
+					</div>
+
+					<div>
+						<button type="submit">Se connecter</button>
+						<a href="login.html">J’ai déjà un compte ? <span>Connexion</span></a>
+					</div>
+				</form>
+			</section>
+		</main>
 		<script>
 			window.addEventListener('load', () => {
 				if ('serviceWorker' in navigator) {

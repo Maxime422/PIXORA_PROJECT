@@ -76,8 +76,8 @@
 
 /* Mode sombre par défaut */
 body {
-	background-color: var(--color-black);
-	color: var(--color-white);
+	background-color: var(--color-white);
+	color: var(--color-black);
 	font-family: var(--font-main);
 }
 
@@ -105,9 +105,8 @@ h1 {
 	font-weight: var(--font-weight-black);
 }
 
-h2,
-i {
-	font-size: var(--text-size-medium);
+h2 {
+	font-size: var(--text-size-large);
 	font-weight: var(--font-weight-extra-bold);
 }
 
@@ -118,7 +117,10 @@ button,
 a,
 input,
 span,
-p {
+p,
+i,
+select,
+textarea {
 	font-size: var(--text-size-small);
 	font-weight: var(--font-weight-bold);
 }
