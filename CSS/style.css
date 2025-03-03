@@ -137,7 +137,7 @@
 	padding: var(--padding-medium);
 	border-radius: var(--border-radius-small);
 	border: var(--color-black-2) 1px solid;
-	background-color: var(--color-blueb);
+	background-color: var(--color-white-1);
 	color: var(--color-black-2);
 	font-weight: var(--font-weight-bold);
 }
