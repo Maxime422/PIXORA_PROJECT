@@ -4,15 +4,11 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
-
 		<meta name="description" content="..." />
 		<meta name="author" content="Maxime Germis" />
-
         <link rel="icon" type="image/png" sizes="76x76" href="..." />
-
 		<link rel="stylesheet" href="CSS/variables.css" />
 		<link rel="stylesheet" href="CSS/style.css" />
-
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,14 +16,117 @@
 			href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
 			rel="stylesheet"
 		/>
-
 		<script src="JS/script.js" defer></script>
 	</head>
-
-	<body>
+	<body id="home">
 		<header>
-
+			<div class="logo">
+				<i class="fa-solid fa-p"></i>
+				<h1>Pixora</h1>
+			</div>
+			<div class="recherche">
+				<i class="fa-solid fa-magnifying-glass"></i>
+				<input type="text" placeholder="Recherche">
+			</div>
+			<div>
+				<a href="./membre.html" >membre <i class="fa-solid fa-check"></i></a>
+			</div>
 		</header>
+		<main class="container">
+			<section>
+				<div>
+					<img src="IMG/castex.jpg" alt="">
+					<div>
+						<div>
+							<span>Followers</span>
+							<span>69420</span>
+						</div>
+						<div>
+							<span>Nom</span>
+							<span>Identifiant</span>
+						</div>
+						<div>
+							<span>Following</span>
+							<span>69420</span>
+						</div>
+					</div>
+				</div>
+				<span>Recents Post</span>
+				<div>
+					<article>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, libero provident? Delectus, necessitatibus. Recusandae reiciendis consequuntur fuga sequi veniam voluptates ipsum distinctio, quam labore odit iste aspernatur aut vel placeat.</p>
+						<img src="IMG/castex.jpg" alt="">
+						<footer>
+							<div><i class="fa-regular fa-heart"></i><i class="fa-solid fa-heart"></i>69</div>
+							<div><i class="fa-regular fa-comment"></i> 69</div>
+							<div><i class="fa-regular fa-bookmark"></i><i class="fa-solid fa-bookmark"></i> 69</div>
+							<div><i class="fa-solid fa-share"></i> 69</div>
+						</footer>
+					</article>
+				</div>
+			</section>
+			<section>
+				<div class="filtre">
+					<span>Trier par</span>
+					<div class="filtreboutton">
+						<button>Abonnement <i class="fa-solid fa-star"></i></button>
+						<button>A-Z <i class="fa-solid fa-user"></i></button>
+						<button>Dates <i class="fa-solid fa-clock"></i></button>
+					</div>
+				</div>
+				<div class="listarticle">
+					<article>
+						<header>
+							<div>
+								<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuZeWBpFS1Le6TfHoBzN2OBuPIvKUGBSdo2A&s" alt="">
+								<div>
+									<h2>Nom/Pseudo</h2>
+									<span>Identifiant</span>
+								</div>
+							</div>
+							<i class="fa-solid fa-ellipsis-vertical"></i>
+						</header>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, libero provident? Delectus, necessitatibus. Recusandae reiciendis consequuntur fuga sequi veniam voluptates ipsum distinctio, quam labore odit iste aspernatur aut vel placeat.</p>
+						<img src="IMG/castex.jpg" alt="">
+						<footer>
+							<div><i class="fa-regular fa-heart"></i><i class="fa-solid fa-heart"></i>69</div>
+							<div><i class="fa-regular fa-comment"></i> 69</div>
+							<div><i class="fa-regular fa-bookmark"></i><i class="fa-solid fa-bookmark"></i> 69</div>
+							<div><i class="fa-solid fa-share"></i> 69</div>
+						</footer>
+					</article>
+					<article>
+						<header>
+							<div>
+								<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuZeWBpFS1Le6TfHoBzN2OBuPIvKUGBSdo2A&s" alt="">
+								<div>
+									<h2>Nom/Pseudo</h2>
+									<span>Identifiant</span>
+								</div>
+							</div>
+							<i class="fa-solid fa-ellipsis-vertical"></i>
+						</header>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, libero provident? Delectus, necessitatibus. Recusandae reiciendis consequuntur fuga sequi veniam voluptates ipsum distinctio, quam labore odit iste aspernatur aut vel placeat.</p>
+						<img src="IMG/castex.jpg" alt="">
+						<footer>
+							<span><i class="fa-regular fa-heart"></i><i class="fa-solid fa-heart"></i> 69</span>
+							<span><i class="fa-regular fa-comment"></i> 69</span>
+							<span><i class="fa-regular fa-bookmark"></i><i class="fa-solid fa-bookmark"></i> 69</span>
+							<span><i class="fa-solid fa-share"></i> 69</span>
+						</footer>
+					</article>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<span><i class="fa-regular fa-copyright"> pixora</i></span>
+			<div>
+				<a href="#">Mention legales</a>
+				<a href="#">Condition d'utilisation</a>
+				<a href="#">Coordonées</a>
+				<a href="#">Langues</a>
+			</div>
+		</footer>
 		<script>
 			window.addEventListener('load', () => {
 				if ('serviceWorker' in navigator) {
