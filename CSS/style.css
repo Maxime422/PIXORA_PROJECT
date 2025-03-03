@@ -212,7 +212,7 @@
 	color: var(--color-red);
 	border:2px solid  var(--color-red);
 }
-#index main{
+#index>main{
 	margin: 48px;
 	display: flex;
 	justify-content: center;
