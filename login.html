@@ -24,45 +24,52 @@
 		<script src="JS/script.js" defer></script>
 	</head>
 
-	<body>
+	<body id="login">
 		<!-- Main -->
-		<main class="zf">
-			<section id="sectionText">
-				<a href="index.html"><img src="IMG/PINTEREST_TEMP_LOGO.png" alt="Logo Pixora" /></a>
-
-				<div>
-					<h1>Bienvenue</h1>
-					<p>Inscrit toi pour profiter dès maintenant et rejoins l’Pixora !</p>
-				</div>
-			</section>
-
+		<main class="zf login">
 			<!-- Section 100vh -->
 			<section id="sectionForm">
+				<h2>Connexion</h2>
 				<form>
-					<h2>S'inscrire</h2>
-
 					<div>
-						<label for="name">Nom d’utilisateur</label>
-						<input type="text" name="name" id="name" required minlength="4" maxlength="20" placeholder="Entre un nom d’utilisateur" />
-
 						<label for="email">Adresse mail</label>
 						<input type="email" name="email" id="email" required minlength="4" maxlength="20" placeholder="Entre ton adresse mail" />
 
 						<label for="mdp">Mot de passe</label>
 						<input type="password" name="mdp" id="mdp" required minlength="8" maxlength="20" placeholder="Entre ton mot de passe" />
 
-						<label for="mdpConfirm">Entrer à nouveau ton mot de passe</label>
-						<input type="password" name="mdpConfirm" id="mdpConfirm" required minlength="8" maxlength="20" placeholder="Entre à nouveau ton mot de passe" />
-
-						<input type="checkbox" />
-						<a href="#">J’accepte les <span>conditions d’utilisations</span></a>
+						<div class="spaceBeetween">
+							<div class="center">
+								<input type="checkbox" id="checkBoxLogin" />
+								<label for="checkBoxLogin">Rester connecter ?</label>
+							</div>
+							<a href="#" class="redColor">Mot de passe oublié ?</a>
+						</div>
 					</div>
-
 					<div>
 						<button type="submit">Se connecter</button>
-						<a href="login.html">J’ai déjà un compte ? <span>Connexion</span></a>
+						<div class="loginPlateform center">
+							<button id="loginGoogle">
+								<img src="./IMG/flat-color-icons_google.png" alt="logo google">
+								<span>Connexion Google</span>
+							</button>
+							<button id="loginMeta">
+								<img src="./IMG/logos_meta-icon.png" alt="logo meta">
+								<span>Connexion Meta</span>
+							</button>
+						</div>
 					</div>
+					<a href="./inscription.html" class="textAlign">Je n’ai pas de compte ? <span class="redColor">Inscription</span></a>
 				</form>
+			</section>
+
+			<section id="sectionText">
+				<a href="index.html"><img src="IMG/image.png" alt="Logo Pixora" /></a>
+
+				<div>
+					<h1 class="title">Connexion</h1>
+					<p>Connecte toi pour et retrouve notre communauté.</p>
+				</div>
 			</section>
 		</main>
 		<script>

@@ -39,8 +39,8 @@
 
 	/* Tailles de texte */
 	--text-size-small: 0.8rem;
-	--text-size-medium: 1rem;
-	--text-size-large: 1.5rem;
+	--text-size-medium: 1.2rem;
+	--text-size-large: 1.8rem;
 	--text-size-extra: 2.5rem;
 
 	/* Bordures */
@@ -100,14 +100,15 @@ button {
 }
 
 /* Gestion des fonts */
-h1 {
+.title {
 	font-size: var(--text-size-extra);
 	font-weight: var(--font-weight-black);
 }
 
 h2 {
 	font-size: var(--text-size-large);
-	font-weight: var(--font-weight-extra-bold);
+	font-weight: var(--font-weight-black);
+	color: var(--color-red-1);
 }
 
 h3,
@@ -120,7 +121,28 @@ span,
 p,
 i,
 select,
-textarea {
+textarea,
+label {
 	font-size: var(--text-size-small);
+	font-family: var(--font-main);
+}
+
+h3,
+h4,
+h5,
+button,
+a,
+input,
+span,
+i,
+select,
+textarea,
+label {
+	font-weight: var(--font-weight-extra-bold);
+}
+
+
+p {
 	font-weight: var(--font-weight-bold);
 }
+
