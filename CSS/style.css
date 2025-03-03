@@ -60,7 +60,8 @@
 	--gap-large: 2rem;
 	--gap-extra: 4rem;
 }
-.zf {
+
+#login.zf {
 	height: 100vh;
 	width: 100vw;
 	padding: var(--padding-large);
@@ -68,8 +69,18 @@
 	background-color: var(--color-red-1);
 }
 
-#sectionText,
-#sectionForm {
+#login .inscription {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+}
+
+#login .login {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+}
+
+#login #sectionText,
+#login #sectionForm {
 	display: flex;
 	flex-direction: column;
 	gap: var(--gap-large);
@@ -113,7 +124,7 @@
 	padding: var(--padding-medium);
 	border-radius: var(--border-radius-small);
 	border: var(--color-black-2) 1px solid;
-	background-color: var(--color-blueb);
+	background-color: var(--color-white-1);
 	color: var(--color-black-2);
 	font-weight: var(--font-weight-bold);
 }
@@ -127,7 +138,6 @@
 	flex-direction: row;
 	align-items: center;
 }
-
 
 #login #sectionForm form .spaceBeetween {
 	display: flex;
@@ -147,145 +157,6 @@
 #login #sectionForm form .textAlign {
 	text-align: center;
 }
-/* index */
-#index>header{
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding: 16px 32px;
-	background-color: var(--color-white-1);
-}
-#index h1,.logo>i{
-	font-size: 25px;
-}
-.logo{
-	display: flex;
-	align-items: center;
-	gap: 8px;
-	color: var(--color-red);
-	
-}
-.recherche{
-	width: 736px;
-	display: flex;
-	height: 48px;
-	align-items: center;
-	background-color: var(--color-white-2);
-	color: var(--color-black);
-	border-radius: 24px;
-	padding: 16px;
-	gap: 4px;
-}
-.recherche>input::placeholder{
-	background-color: var(--color-white-2);
-	color: black;
-}
-#index>header>div{
-	display: flex;
-	gap:16px
-}
-#index>header>div>a{
-	background-color: var(--color-red);
-	padding: 16px 36px;
-	color: var(--color-white);
-	border-radius: 8px;
-	display: flex;
-	gap: 4px;
-	align-items: center;
-}
-#index>header>div>.connection{
-	background-color: var(--color-white-1);
-	color: var(--color-red);
-	border:2px solid  var(--color-red);
-}
-#index>main{
-	margin: 48px;
-	display: flex;
-	justify-content: center;
-}
-#index section{
-	background-color: var(--color-white-1);
-	border-radius: 16px;
-	padding: 32px;
-}
-.filtre{
-	display: flex;
-	justify-content: space-between;
-	font-size: 16px;
-	align-items: center;
-}
-.filtreboutton{
-	display: flex;
-	gap: 16px;
-	
-}
-.filtreboutton>button{
-	color: var(--color-black);
-	border: 2px solid var(--color-black);
-	padding: 10px 16px;
-	border-radius:8px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 4px;
-}
-#index .listarticle{
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	margin: 16px 0;
-	gap: 16px;
-}
-.listarticle>article{
-	display: flex;
-	flex-direction: column;
-	background-color: var(--color-white-2);
-	padding: 16px;
-	border-radius: 16px;
-}
-.listarticle>article{
-	display: flex;
-	flex-direction: column;
-	gap: 8px;
-}
-.listarticle>article>header{
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-}
-.listarticle>article>header>div{
-	display: flex;
-	gap: 16px;
-}
-.listarticle>article>header>div>img{
-	width: 55px;
-	height: 55px;
-	border-radius: 50%;
-	object-fit: cover;
-
-}
-.listarticle>article>header>i{
-	width: 24px;
-	height: 24px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-.listarticle>article>header>div>div>h2{
-	font-size: 22px;
-}
-.listarticle>article>img{
-	width: 100%;
-	height: 200px;
-	border-radius: 16px;
-	object-fit: cover;
-}
-.listarticle>article>footer{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 0 16px;
-}
-
 
 #login #sectionForm form button[type='submit'],
 #loginGoogle,
@@ -314,4 +185,141 @@
 	align-items: center;
 	justify-content: center;
 	gap: var(--gap-small);
+}
+
+/* index */
+#index > header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 16px 32px;
+	background-color: var(--color-white-1);
+}
+#index h1,
+.logo > i {
+	font-size: 25px;
+}
+.logo {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	color: var(--color-red);
+}
+.recherche {
+	width: 736px;
+	display: flex;
+	height: 48px;
+	align-items: center;
+	background-color: var(--color-white-2);
+	color: var(--color-black);
+	border-radius: 24px;
+	padding: 16px;
+	gap: 4px;
+}
+.recherche > input::placeholder {
+	background-color: var(--color-white-2);
+	color: black;
+}
+#index > header > div {
+	display: flex;
+	gap: 16px;
+}
+#index > header > div > a {
+	background-color: var(--color-red);
+	padding: 16px 36px;
+	color: var(--color-white);
+	border-radius: 8px;
+	display: flex;
+	gap: 4px;
+	align-items: center;
+}
+#index > header > div > .connection {
+	background-color: var(--color-white-1);
+	color: var(--color-red);
+	border: 2px solid var(--color-red);
+}
+#index > main {
+	margin: 48px;
+	display: flex;
+	justify-content: center;
+}
+#index section {
+	background-color: var(--color-white-1);
+	border-radius: 16px;
+	padding: 32px;
+}
+.filtre {
+	display: flex;
+	justify-content: space-between;
+	font-size: 16px;
+	align-items: center;
+}
+.filtreboutton {
+	display: flex;
+	gap: 16px;
+}
+.filtreboutton > button {
+	color: var(--color-black);
+	border: 2px solid var(--color-black);
+	padding: 10px 16px;
+	border-radius: 8px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 4px;
+}
+#index .listarticle {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin: 16px 0;
+	gap: 16px;
+}
+.listarticle > article {
+	display: flex;
+	flex-direction: column;
+	background-color: var(--color-white-2);
+	padding: 16px;
+	border-radius: 16px;
+}
+.listarticle > article {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+.listarticle > article > header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.listarticle > article > header > div {
+	display: flex;
+	gap: 16px;
+}
+.listarticle > article > header > div > img {
+	width: 55px;
+	height: 55px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+.listarticle > article > header > i {
+	width: 24px;
+	height: 24px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.listarticle > article > header > div > div > h2 {
+	font-size: 22px;
+}
+.listarticle > article > img {
+	width: 100%;
+	height: 200px;
+	border-radius: 16px;
+	object-fit: cover;
+}
+.listarticle > article > footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 16px;
 }
