@@ -190,15 +190,37 @@
 	gap: var(--gap-small);
 }
 
+/*page base*/
+body{
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+/* footer */
+footer{
+	display: flex;
+	justify-content: space-between;
+	color: var(--color-red) ;
+	background-color: var(--color-white-1);
+	padding: 8px 32px;
+	font-weight: 600;
+}
+footer>div{
+	display: flex;
+	gap: 32px;
+}
 /* index */
-#index > header {
+
+/*index header */
+header {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	padding: 16px 32px;
 	background-color: var(--color-white-1);
 }
-#index h1,
+h1,
 .logo > i {
 	font-size: 25px;
 }
@@ -219,14 +241,11 @@
 	padding: 0 16px;
 	gap: 4px;
 }
-
 .recherche>input:focus {
 	outline: none;
 	border: none; 
   }
-  
 .recherche > input::placeholder {
-
 	color: black;
 }
 .recherche > input{
@@ -234,17 +253,11 @@
 	height: 100%;
 	background-color: var(--color-white-2);
 }
-#index{
-	min-height: 100vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-}
-#index > header > div {
+header > div {
 	display: flex;
 	gap: 16px;
 }
-#index > header > div > a {
+header > div > a {
 	background-color: var(--color-red);
 	padding: 16px 36px;
 	color: var(--color-white);
@@ -253,13 +266,15 @@
 	gap: 4px;
 	align-items: center;
 }
-#index > header > div > .connection {
+header > div > .connection {
 	background-color: var(--color-white-1);
 	color: var(--color-red);
 	border: 2px solid var(--color-red);
+	padding: 14px 34px;  
 }
+/*index main*/
 #index > main {
-	margin: 48px;
+	margin: 48px 0;
 	display: flex;
 	justify-content: center;
 }
@@ -296,6 +311,7 @@
 	grid-template-columns: 1fr 1fr;
 	margin: 16px 0;
 	gap: 16px;
+	
 }
 .listarticle > article {
 	display: flex;
@@ -306,6 +322,7 @@
 	gap: 16px;
 }
 .listarticle > article > header {
+	background-color: var(--color-white-2);
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -338,21 +355,15 @@
 	object-fit: cover;
 }
 .listarticle > article > footer {
+	background-color: var(--color-white-2);
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding: 0 16px;
 }
-#index>footer{
-	display: flex;
-	justify-content: space-between;
-	color: var(--color-red) ;
-	background-color: var(--color-white-1);
-	padding: 8px 32px;
-	font-weight: 600;
-}
-#index>footer>div{
-	display: flex;
-	gap: 32px;
 
+/*home*/
+#home>main{
+	display: grid;
+	grid-template-columns: 1fr 2fr;
 }
