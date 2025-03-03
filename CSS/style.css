@@ -97,7 +97,7 @@
 	display: flex;
 	flex-direction: column;
 	gap: var(--gap-large);
-	padding: var(--padding-large);
+	padding: var(--padding-extra);
 	padding-top: 10rem;
 	background-color: var(--color-white);
 	border-radius: var(--border-radius-medium);
@@ -193,6 +193,7 @@
 #loginGoogle,
 #loginMeta {
 	flex: 1;
+	height: 1.5rem;
 	border: var(--color-black) 1px solid;
 	display: flex;
 	align-items: center;
